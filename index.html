@@ -3,146 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mohamed Oualil — Founder & Software Developer</title>
-  <meta name="description" content="Mohamed Oualil is a founder and software developer building software products and exploring AI-powered applications." />
+  <title>Mohamed Oualil Software — Early-stage Software Venture</title>
+  <meta name="description" content="Mohamed Oualil Software is an early-stage solo software venture building practical business applications with C#, .NET, SQL Server, and AI APIs." />
   <style>
-    :root {
-      --bg: #0b1020;
-      --card: #121a2d;
-      --text: #f6f7fb;
-      --muted: #aeb7c9;
-      --accent: #7c9cff;
-      --border: #23304f;
+    :root{
+      --bg:#0a0f1c;--panel:#111827;--panel2:#0f172a;--text:#f8fafc;--muted:#a7b0c0;
+      --line:#23314d;--accent:#8fb0ff;--soft:#17233c;
     }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top, #16213f 0%, var(--bg) 45%);
-      color: var(--text);
-      line-height: 1.6;
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:radial-gradient(circle at 20% 0%,#18284d 0%,var(--bg) 38%);color:var(--text);line-height:1.6
     }
-    .wrap {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 32px 20px 72px;
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 96px;
-    }
-    .brand { font-weight: 700; letter-spacing: .2px; }
-    .navlinks { display: flex; gap: 18px; }
-    a { color: inherit; text-decoration: none; }
-    .navlinks a, .link { color: var(--muted); }
-    .navlinks a:hover, .link:hover { color: var(--text); }
-    .hero { max-width: 760px; }
-    .eyebrow {
-      color: var(--accent);
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: .12em;
-      font-size: .8rem;
-    }
-    h1 {
-      font-size: clamp(2.8rem, 8vw, 5.8rem);
-      line-height: .98;
-      margin: 14px 0 24px;
-      letter-spacing: -0.05em;
-    }
-    .lead {
-      font-size: clamp(1.1rem, 2.3vw, 1.4rem);
-      color: var(--muted);
-      max-width: 700px;
-    }
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 32px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 18px;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      font-weight: 650;
-    }
-    .btn.primary { background: var(--text); color: #0b1020; }
-    .btn.secondary { background: rgba(255,255,255,.03); }
-    .grid {
-      margin-top: 96px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-    .card {
-      background: rgba(18, 26, 45, .78);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px;
-      backdrop-filter: blur(10px);
-    }
-    .card h2 { margin-top: 0; font-size: 1.05rem; }
-    .card p { color: var(--muted); margin-bottom: 0; }
-    footer {
-      margin-top: 90px;
-      padding-top: 24px;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: .95rem;
-    }
-    @media (max-width: 760px) {
-      nav { margin-bottom: 64px; }
-      .grid { grid-template-columns: 1fr; margin-top: 64px; }
-      .navlinks { display: none; }
-    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1080px;margin:0 auto;padding:28px 22px 70px}
+    nav{display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .brand{font-weight:800;letter-spacing:.1px}
+    .nav{display:flex;gap:18px;color:var(--muted);font-size:.95rem}
+    .nav a:hover{color:var(--text)}
+    .hero{padding:110px 0 70px;max-width:860px}
+    .tag{display:inline-flex;align-items:center;gap:8px;padding:7px 10px;border:1px solid var(--line);
+      border-radius:999px;background:rgba(255,255,255,.03);color:var(--accent);font-weight:700;font-size:.82rem}
+    h1{font-size:clamp(3rem,8vw,6.4rem);line-height:.95;letter-spacing:-.055em;margin:18px 0 26px}
+    .lead{font-size:clamp(1.15rem,2.3vw,1.45rem);color:var(--muted);max-width:800px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+    .btn{padding:12px 17px;border-radius:10px;border:1px solid var(--line);font-weight:700}
+    .primary{background:var(--text);color:#0a0f1c}
+    .secondary{background:rgba(255,255,255,.03)}
+    section{margin-top:72px}
+    .section-head{max-width:760px;margin-bottom:24px}
+    .section-head h2{font-size:2rem;margin:0 0 8px}
+    .section-head p{color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:linear-gradient(180deg,rgba(17,24,39,.94),rgba(15,23,42,.92));border:1px solid var(--line);
+      border-radius:16px;padding:22px}
+    .card h3{margin:0 0 9px;font-size:1.08rem}
+    .card p{color:var(--muted);margin:0}
+    .project a{display:inline-block;margin-top:16px;color:var(--accent);font-weight:700}
+    .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
+    .fact{padding:18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.025)}
+    .fact strong{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:6px}
+    .fact span{font-weight:750}
+    .note{margin-top:28px;padding:20px;border-left:3px solid var(--accent);background:var(--soft);border-radius:8px;color:#d9e2f2}
+    footer{margin-top:82px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;
+      gap:18px;flex-wrap:wrap;color:var(--muted);font-size:.95rem}
+    footer a{color:var(--accent)}
+    @media(max-width:820px){.grid,.facts{grid-template-columns:1fr}.nav{display:none}.hero{padding-top:76px}}
   </style>
 </head>
 <body>
   <div class="wrap">
     <nav>
-      <div class="brand">Mohamed Oualil</div>
-      <div class="navlinks">
-        <a href="#about">About</a>
-        <a href="#work">What I'm Building</a>
-        <a href="https://github.com/MohamedOualil" target="_blank" rel="noreferrer">GitHub</a>
+      <div class="brand">Mohamed Oualil Software</div>
+      <div class="nav">
+        <a href="#venture">Venture</a>
+        <a href="#focus">Focus</a>
+        <a href="#work">Engineering Work</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
 
     <main>
-      <section class="hero" id="about">
-        <div class="eyebrow">Founder & Software Developer</div>
-        <h1>Building useful software with modern technology and AI.</h1>
+      <section class="hero" id="venture">
+        <div class="tag">Early-stage · Solo founder · Pre-launch</div>
+        <h1>Building practical software for real business workflows.</h1>
         <p class="lead">
-          I'm Mohamed Oualil, a software developer focused on building practical products with .NET, C#, databases, and AI-powered tools.
+          Mohamed Oualil Software is an early-stage solo software venture focused on business applications built with C#, .NET, SQL Server, and modern AI APIs. The current direction is AI-assisted software that makes everyday workflows easier to manage and automate.
         </p>
         <div class="actions">
-          <a class="btn primary" href="mailto:contact@mohamedoualil.xyz">Contact me</a>
-          <a class="btn secondary" href="https://github.com/MohamedOualil" target="_blank" rel="noreferrer">View GitHub</a>
+          <a class="btn primary" href="mailto:contact@mohamedoualil.xyz">Contact</a>
+          <a class="btn secondary" href="https://github.com/MohamedOualil" target="_blank" rel="noreferrer">GitHub profile</a>
+        </div>
+
+        <div class="facts">
+          <div class="fact"><strong>Stage</strong><span>Pre-launch</span></div>
+          <div class="fact"><strong>Funding</strong><span>Not yet raised</span></div>
+          <div class="fact"><strong>Founder</strong><span>Mohamed Oualil</span></div>
+          <div class="fact"><strong>Location</strong><span>Morocco</span></div>
         </div>
       </section>
 
-      <section class="grid" id="work">
-        <article class="card">
-          <h2>Software Development</h2>
-          <p>I build desktop and application projects with C#, .NET, SQL Server, and structured software architecture.</p>
-        </article>
-        <article class="card">
-          <h2>AI Integration</h2>
-          <p>I'm exploring how AI APIs can improve software workflows, user experiences, automation, and intelligent assistance.</p>
-        </article>
-        <article class="card">
-          <h2>Current Direction</h2>
-          <p>I'm developing new software products and experimenting with AI-powered features that can become part of future applications.</p>
-        </article>
+      <section id="focus">
+        <div class="section-head">
+          <h2>What I’m building toward</h2>
+          <p>
+            The venture is currently in product exploration and development. The goal is to combine proven business-software architecture with AI capabilities that can understand user requests, summarize information, assist with data-heavy tasks, and automate repetitive workflows.
+          </p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>Business software</h3>
+            <p>Structured desktop and web applications for operational workflows, records, inventory, and internal management.</p>
+          </article>
+          <article class="card">
+            <h3>AI assistance</h3>
+            <p>Natural-language features, summarization, information extraction, workflow assistance, and reliable API integrations.</p>
+          </article>
+          <article class="card">
+            <h3>Technical foundation</h3>
+            <p>C#, .NET, SQL Server, clean architecture, layered application design, and API-first development.</p>
+          </article>
+        </div>
+        <div class="note">
+          Current status: this is an early-stage venture. Product direction is being validated through hands-on software projects and prototypes before a broader launch.
+        </div>
+      </section>
+
+      <section id="work">
+        <div class="section-head">
+          <h2>Selected engineering work</h2>
+          <p>Public projects demonstrating the software foundation behind the venture.</p>
+        </div>
+        <div class="grid">
+          <article class="card project">
+            <h3>Bookstore WinForms App</h3>
+            <p>A C#/.NET bookstore management application demonstrating database-backed business workflows and desktop application architecture.</p>
+            <a href="https://github.com/MohamedOualil/Bookstore-WinForms-App" target="_blank" rel="noreferrer">View repository →</a>
+          </article>
+          <article class="card project">
+            <h3>Student API — Clean Architecture</h3>
+            <p>An API project organized around clean architecture principles and maintainable application boundaries.</p>
+            <a href="https://github.com/MohamedOualil/StudentApi-CleanArchitecture" target="_blank" rel="noreferrer">View repository →</a>
+          </article>
+          <article class="card project">
+            <h3>DVLD Management Solution</h3>
+            <p>A management-system project focused on structured workflows, records, and application-layer separation.</p>
+            <a href="https://github.com/MohamedOualil/DVLD-Management-Solution" target="_blank" rel="noreferrer">View repository →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>For product, technical, or partnership inquiries:</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="mailto:contact@mohamedoualil.xyz">contact@mohamedoualil.xyz</a>
+          <a class="btn secondary" href="https://github.com/MohamedOualil" target="_blank" rel="noreferrer">github.com/MohamedOualil</a>
+        </div>
       </section>
     </main>
 
     <footer>
-      © 2026 Mohamed Oualil · <a class="link" href="mailto:contact@mohamedoualil.xyz">contact@mohamedoualil.xyz</a>
+      <span>© 2026 Mohamed Oualil Software</span>
+      <span>Early-stage software venture · Morocco</span>
     </footer>
   </div>
 </body>
